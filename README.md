@@ -1,1 +1,1 @@
-This is  my basic email projject for learminng ci/cd 
+This is  my basic email project for learning ci/cd.
