@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   email-app:
-    image: 7tmak/my-email-app:05
+    image: 7tmak/my-email-app:o4
     container_name: o4
     ports:
       - "5050:5050"
