@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   email-app:
-    image: 7tmak/my-email-app:05
-    container_name: o4
+    image: 7tmak/my-email-app:latest
+    container_name: app
     ports:
       - "5050:5050"
     restart: unless-stopped
