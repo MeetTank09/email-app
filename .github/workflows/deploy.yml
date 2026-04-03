@@ -30,13 +30,7 @@ jobs:
        host: ${{ secrets.EC2_HOST }}
        username: ubuntu  
        key: ${{ secrets.EC2_SSH_KEY }}
-      #  script: |
-      #   docker pull 7tmak/my-email-app:latest
-      #   docker ps -q --filter "publish=5050" | xargs -r docker stop
-      #   docker ps -aq --filter "publish=5050" | xargs -r docker rm
-      #   docker stop app || true
-      #   docker rm app || true  
-      #   docker run -d --name app -p 5050:5050 7tmak/my-email-app:latest
+       
        script: |
         docker pull 7tmak/my-email-app:${{ github.sha }}
 
